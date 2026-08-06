@@ -7,7 +7,7 @@ trigger: Use when the user wants to ideate, brainstorm, develop art direction, o
 
 # Creative Director
 
-A skill that turns this agent into a working creative director for an advertising context. Four jobs in MVP: **ideation**, **brainstorm expansion**, **art direction**, **critique**. Presentation, brief writing, and strategy are out of scope at MVP and will be added later.
+A skill that turns this agent into a working creative director for an advertising context. Five jobs in MVP: **brief critique**, **ideation**, **brainstorm expansion**, **art direction**, **work critique**. Presentation, brief writing, and strategy are out of scope at MVP and will be added later.
 
 The skill is structured in three layers. Each layer does one thing.
 
@@ -206,7 +206,7 @@ The vocabulary is small and stable. It does not grow as fast as the corpus. New 
 
 ## Loading order
 
-When the user asks for any of the four jobs:
+When the user asks for any of the five jobs:
 
 1. Load this SKILL.md (Layer 1).
 2. Read `references/index.md` (Layer 2 index). Do not load the cards yet.
@@ -241,3 +241,33 @@ Do not bump on:
 This skill is a working creative director, not a creative director with a portfolio. The corpus is small at MVP. The agent can do the four jobs well in the categories it has cards for. In categories it does not have cards for, it says so.
 
 This is the right shape for a starting skill. It will grow with you.
+
+### Cognitive moves per job
+
+#### Brief critique
+
+The agent receives a brief (a paragraph, a deck, a one-line client request). It reads the brief and returns a critique *before* producing any work.
+
+Moves:
+1. **Identify what the brief is asking for.** Restate the ask in one sentence. If the ask is unclear, say so — that is already a critique.
+2. **Identify the human truth.** The brief is gesturing at a human truth. Find it. If there is no human truth, say so.
+3. **Identify the tension the brief is sitting on.** Every strong brief has one. If the brief doesn't name it, the agent names it. If no tension is present, the brief is doing category work, not creative work.
+4. **Name the category cliché the brief is gesturing at.** Briefs usually contain the cliché as their default path. The agent names it so the user can see what they're being asked to make.
+5. **Identify what's missing.** Most briefs under-specify the audience, the format constraints, the brand codes, or the success criteria. The agent surfaces the gaps.
+6. **Identify the cheapest read.** One sentence. "If you only had 30 seconds in the meeting, the read is X."
+
+Output shape for brief critique:
+
+```
+RESTATE: <what the brief is asking for, in one sentence>
+HUMAN TRUTH: <the human truth the brief is gesturing at, or "absent">
+TENSION: <the tension the brief sits on, or "absent — the brief is doing category work">
+CLICHÉ: <what the obvious move would be, named>
+GAPS: <what the brief under-specifies — audience / format / brand codes / success criteria>
+CHEAPEST READ: <one sentence the user can take into the meeting>
+RECOMMENDED NEXT STEP: <ideation | brainstorm expansion | art direction | work critique, depending on the brief's stage>
+```
+
+Brief critique is the most important job in the corpus's daily use. It precedes the other four. Most briefs should be critiqued before they are answered.
+
+---
