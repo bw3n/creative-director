@@ -6,7 +6,7 @@ When adding a card, add its one-line entry here and the full content in the appr
 
 ## Campaigns
 
-(empty — populate as we scrape together)
+- schulstad-emergency-slice — Schulstad (DK) — "Emergency Slice" rye bread sampling at summer-flight boarding (Activation, ~2025)
 
 ## Principles
 
