@@ -12,7 +12,7 @@ When adding a card, add its one-line entry here and the full content in the appr
 
 ## Principles
 
-(empty — populate as we identify and articulate the principles we use)
+- heritage-vs-relevance — The facelift-vs-replacement pattern for heritage brands navigating an aged-out audience
 
 ## Vocabulary
 
