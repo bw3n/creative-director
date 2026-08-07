@@ -9,6 +9,11 @@ When adding a card, add its one-line entry here and the full content in the appr
 - schulstad-emergency-slice — Schulstad (DK) — "Emergency Slice" rye bread sampling at summer-flight boarding (Activation, ~2025)
 - underground-ice-cream — Underground Ice Cream (DK) — Heritage ice cream repositioned for calorie-savvy millennials (Digital + Social + Activation, ~2023–24)
 - aritium-painvisible — Aritium (ES) / VML Madrid + NY + Health — Thermal-imaging pain-measurement diagnostic app + dashboard (Digital + Web, 2024)
+- humour-is-art — UmorismoSenzaFiltri (IT) — Classical paintings with laughing faces; high-meets-low single-gesture restraint (Print + Social, 2026)
+- carlsberg-goal-posters — Carlsberg (UK) / Fold7 — Posters shaped as functional football goals; medium-as-tool (OOH + Activation, 2026)
+- pedigree-melhor-amigo — PEDIGREE (BR) / AlmapBBDO — Unbranded AI teaser + adopt-a-dog platform; brand withheld to make a point (Digital, 2026)
+- airquity-earswitch — EarSwitch (UK) / Havas Lynx — Pulse oximeter designed for ear canal; bias as design failure, not moral charge (Tech, 2026)
+- heinz-heineken-match — HEINZ × Heineken (UK + international) — Six-pack with 5 beer + 1 ketchup; acknowledge existing behaviour (Film + Packaging, 2026)
 
 ## Principles
 
