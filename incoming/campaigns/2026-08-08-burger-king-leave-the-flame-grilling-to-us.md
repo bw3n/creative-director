@@ -44,14 +44,11 @@
 
 ## Visual examples
 
-  - ![image 1](https://drive.google.com/file/d/1dGRzGRFqAKb71iWRyVcjcGLGZ2DTCVWe/view?usp=drivesdk)
-  - ![image 2](https://drive.google.com/file/d/12iIIadISdHYTxxojEsQVPy_6CyZbzEss/view?usp=drivesdk)
-  - ![image 3](https://drive.google.com/file/d/1l3qisyHAhHsl1GM_CHaglcnZz2JHROOR/view?usp=drivesdk)
-  - ![image 4](https://drive.google.com/file/d/1pWYBgSeic0xiIAKimUDT36kDVTjKmPc7/view?usp=drivesdk)
-  - ![image 5](https://drive.google.com/file/d/1nyV71DpQI9KIIIl-y8WseQZ-8HCdFz-Z/view?usp=drivesdk)
-  - ![image 6](https://drive.google.com/file/d/17i0k-GzKTuzIBo2UxTosyrWaqSa-0Yr3/view?usp=drivesdk)
-  - ![image 7](https://drive.google.com/file/d/1fDHSJs80tElXpjmtATwhca1B9TtQWif3/view?usp=drivesdk)
-  - ![image 8](https://drive.google.com/file/d/1_aaDfEaGBXjrSCrJu72lJNfUodV4qjpc/view?usp=drivesdk)
+  - ![image 1](https://drive.google.com/file/d/12iIIadISdHYTxxojEsQVPy_6CyZbzEss/view?usp=drivesdk)
+  - ![image 2](https://drive.google.com/file/d/1l3qisyHAhHsl1GM_CHaglcnZz2JHROOR/view?usp=drivesdk)
+  - ![image 3](https://drive.google.com/file/d/1pWYBgSeic0xiIAKimUDT36kDVTjKmPc7/view?usp=drivesdk)
+  - ![image 4](https://drive.google.com/file/d/1nyV71DpQI9KIIIl-y8WseQZ-8HCdFz-Z/view?usp=drivesdk)
+  - ![image 5](https://drive.google.com/file/d/17i0k-GzKTuzIBo2UxTosyrWaqSa-0Yr3/view?usp=drivesdk)
 
 ## What to steal
 
