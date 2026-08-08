@@ -44,12 +44,11 @@
 
 ## Visual examples
 
-  - ![image 1](https://drive.google.com/file/d/13JGVe6N2vfumlVVgpC7CBT9d8O5D_CqZ/view?usp=drivesdk)
-  - ![image 2](https://drive.google.com/file/d/1W3YKoTDiu_9hEm8qVk9p1xg_d1PbcH8K/view?usp=drivesdk)
-  - ![image 3](https://drive.google.com/file/d/1tDgYe_Do2vSd4yJWdENGTtQk_-x6uxv3/view?usp=drivesdk)
-  - ![image 4](https://drive.google.com/file/d/1Uy7ZqIcji58PIKeMBjhB5Yyk2wJJSpLN/view?usp=drivesdk)
-  - ![image 5](https://drive.google.com/file/d/1fkZZlwHDtnXvKY1ytggGzLg3bUFCDioH/view?usp=drivesdk)
-  - ![image 6](https://drive.google.com/file/d/1s_ezAeobYyxPR7bmTn4L4DNDPNP9Ngxc/view?usp=drivesdk)
+  - ![image 1](https://drive.google.com/file/d/1iCf1D30NFHdtdKKOs69oZ_8s3qBLaRFI/view?usp=drivesdk)
+  - ![image 2](https://drive.google.com/file/d/1cfszfeb3xaR3uljonw29HLPANe7rKCmR/view?usp=drivesdk)
+  - ![image 3](https://drive.google.com/file/d/1QJxpuLlxw74MsMlq39bGtbAex1ZvtVwB/view?usp=drivesdk)
+  - ![image 4](https://drive.google.com/file/d/1_SkGbt4hRBVsc1u7Y4eyLqGkuT4wOaQG/view?usp=drivesdk)
+  - ![image 5](https://drive.google.com/file/d/1CsVncW7mHBPaUfKjypWG67_pLac8EJYP/view?usp=drivesdk)
 
 ## What to steal
 
@@ -97,4 +96,4 @@ The visuals feature sharply defined sunburn patterns left by caps, sunglasses, n
 
 ---
 
-**Processed:** 2026-08-08T05:20:36.290198 from https://campaignsoftheworld.com/creative-print-ads/burger-king-leave-the-flame-grilling-to-us/
+**Processed:** 2026-08-08T05:25:51.018635 from https://campaignsoftheworld.com/creative-print-ads/burger-king-leave-the-flame-grilling-to-us/
