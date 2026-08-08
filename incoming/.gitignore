@@ -1,5 +1,5 @@
 # Drafts and downloads from the COTW scanner
-# Don't commit images to git (they're 100MB+ and live on Drive instead)
+# Do not commit images to git (they live on Drive instead)
 images/
 scan.log
 # Commit the draft cards so you can review from any device
