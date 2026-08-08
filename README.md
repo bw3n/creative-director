@@ -1,57 +1,68 @@
-# creative-director-skill
+# creative-director
 
-A working creative director for an advertising context. Three-layer architecture: reasoning (model-driven), knowledge (corpus on demand), vocabulary (style register).
+A creative-director asset system: campaign corpus, principles, vocabulary, brief critique, ideation.
 
-Five jobs at MVP: brief critique, ideation, brainstorm expansion, art direction, work critique. Brief critique is the entry point — it runs first when a brief arrives, before any work is produced.
+**Repo:** `bw3n/creative-director`
+**Local path:** `~/creative-director-skill/` (the VPS clone)
+**Synced across:** Mac (Obsidian), Windows PC (Obsidian), work laptop (TBD)
 
-## Repo layout
+## Structure
 
 ```
-SKILL.md                  # Layer 1 — reasoning (posture, moves, output shapes)
-references/
-  index.md                # Layer 2 — index of all corpus cards
-  campaigns/              # Layer 2 — one file per famous campaign
-  principles/             # Layer 2 — one file per principle of art direction
-  vocabulary/             # Layer 3 — vocabulary patterns (currently tone-registers.md)
-briefs/                   # brief cards — one folder per real brief, agent writes
-examples/                 # worked examples of the four jobs (added over time)
-sessions/                 # scrap-session notes (added over time)
+creative-director/
+├── README.md                           ← this file
+├── SKILL.md                            ← the skill (5 jobs: brief-critique, ideation, brainstorm, art-direction, work-critique)
+├── incoming/                           ← draft cards awaiting your review
+│   ├── .gitignore                      ← excludes images/ and scan.log from git
+│   ├── campaigns/                      ← draft campaign cards (skeleton fields, body at the bottom)
+│   ├── images/                         ← local copies of campaign images (gitignored)
+│   └── scan.log                        ← COTW scanner activity log
+├── references/                         ← the live corpus
+│   ├── index.md                        ← one-line entry per campaign
+│   ├── campaigns/                      ← finished campaign cards (full reasoning)
+│   ├── principles/                     ← one file per principle of art direction
+│   └── vocabulary/                     ← vocabulary patterns
+├── examples/                           ← worked examples of the 5 jobs
+└── sessions/                           ← scrap-session notes (added over time)
 ```
 
-## Branches
+## How the corpus grows
 
-- `main` — the merged, stable corpus
-- `scratch` — the active scrap session, merged to `main` after review
+1. **COTW scanner** runs daily at 6 AM SGT. It fetches the latest ad from each of 5 categories (Film, Digital, OOH, Tech, Print) on campaignsoftheworld.com, downloads the images, writes a draft card to `incoming/campaigns/`, and uploads the images to your Google Drive at `[ADs]/<Medium>/<brand-name>/` with a README.
 
-## Adding cards
+2. **You review drafts.** Open `incoming/campaigns/` in Obsidian. Read the article body at the bottom of the card, look at the Drive images (click the URLs in Visual examples), decide whether to keep the campaign.
 
-1. Copy the appropriate template (`references/campaigns/_template.md`, `references/principles/_template.md`, `references/vocabulary/_template.md`).
-2. Write the card. Cards are short — 100–400 lines.
-3. Add the one-line entry to `references/index.md`.
-4. Commit on `scratch`. Merge to `main` after review.
+3. **To accept:** tell me ("accept carlsberg-goal-posters"). I fill in the empty fields based on the article body, move the card to `references/campaigns/`, update `references/index.md`, push to GitHub.
 
-## Card quality rule
+4. **To reject:** tell me ("reject marmite-wemite-campaign"). I delete the draft card from `incoming/campaigns/`. You delete the Drive folder manually when convenient.
 
-Don't write a campaign card unless the visual mechanism can be named from the source. Cards from rationale-text-only fetchers (D&AD, TBWA scrape) wait for an image. The corpus is only as useful as its weakest card; one thin card is a tax on every future session.
+## Devices
 
-## Brief cards
+Synced via GitHub to:
+- Mac (Obsidian + Obsidian Git plugin) — primary
+- Windows PC (Obsidian + Obsidian Git plugin)
+- Work laptop (TBD)
 
-Each real brief the agent works on becomes a brief card under `briefs/`. The card captures: original brief, the agent's first read, corpus cards loaded, work done, your decisions, the output, the outcome, lessons. Brief cards are session-history, not part of the runtime corpus. See `briefs/README.md` for the format and when to write one.
+The COTW scanner runs on the VPS and writes to this repo. Your Mac pulls via Obsidian Git on a 5-minute cron.
 
-## Expanding scope
+## COTW scanner
 
-To add a new job to the skill (presentation, brief writing, strategy, etc.):
+A Python script (`cotw_scan.py`) on the VPS that:
+1. Fetches each COTW category page (stealth mode, bypasses Cloudflare).
+2. Extracts the latest article URL from each category.
+3. Fetches the article, parses metadata (title, date, image URLs).
+4. Downloads images to `incoming/images/<slug>/`.
+5. Uploads images to Drive at `[ADs]/<Medium>/<slug>/` with a README.
+6. Writes a draft card to `incoming/campaigns/YYYY-MM-DD-<slug>.md` with Drive URLs in the Visual examples section.
 
-1. Add a new section to `SKILL.md` Layer 1 with posture + moves + output shape.
-2. Add the relevant cards to Layer 2 (`references/`).
-3. Update the frontmatter version.
-4. Update this README.
+Cron entry: `0 22 * * * python3 /home/ubuntu/bin/cotw_scan.py >> /home/ubuntu/creative-director-skill/incoming/scan.log 2>&1`
 
-## Versioning
+## Draft card format
 
-`SKILL.md` has a version in its frontmatter. Bump on:
-- New job added
-- Layer architecture change
-- Posture or move rewrite
+The scanner writes skeletons — most reasoning fields are empty. The article body is at the bottom (so you have the source material). To card:
 
-Do not bump on card additions.
+1. Read the article body.
+2. Fill in: What it was trying to do, The tension, The visual mechanism, The refusal, What to steal, What not to steal.
+3. Move from `incoming/campaigns/` to `references/campaigns/`.
+4. Add a one-line entry to `references/index.md`.
+5. Push to GitHub.
